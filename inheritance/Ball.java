@@ -8,7 +8,7 @@ public class Ball {
 	int x, y, speedx, speedy, size;
 	Color color;
 	
-	public Ball(int x, int y, int speedx, int speedy, int size, Color c) {
+	public Ball(int x, int y, int size, int speedx, int speedy, Color c) {
 		this.x = x;
 		this.y = y;
 		this.speedx = speedx;
