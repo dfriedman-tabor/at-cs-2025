@@ -79,6 +79,8 @@ public class SpaceInvadersFiller {
 		
 
 		g.setColor(Color.red);
+		if (paused) 
+			g.drawString("paused", 500, 300);
 		g.drawString("Lives: "+lives, 15, 15);
 		
 		if (lost) 
