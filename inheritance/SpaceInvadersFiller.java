@@ -119,8 +119,9 @@ public class SpaceInvadersFiller {
 			if (!paused) {
 				move();
 				checkCollisions();
-				frame.getContentPane().repaint();
 			}
+			frame.getContentPane().repaint();
+
 			try {Thread.sleep(20);} 
 			catch (InterruptedException e) {}
 		}
