@@ -19,15 +19,22 @@ public class Branch<T> {
 	}
 	
 	public String toString() {
+		return toString(0);
+	}
+	
+	public String toString(int depth) {
 		
 		
-		String output = "\n";
+		String output = "";
 		
-		output += this.data;
+		for (int i = 0; i < depth; i++) 
+			output += "\t";
+		
+		output += this.data + "\n\n";
 		
 		for (Branch<T> child : children) {
 			
-			output += child.toString() + "\n";
+			output += child.toString(depth + 1);
 		}
 		return output;
 		
