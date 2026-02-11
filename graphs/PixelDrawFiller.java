@@ -19,7 +19,7 @@ public class PixelDraw {
 	
 
 	
-	public void autofill(int x, int y) {
+	public void autofill(int i, int j) {
 		
 		// your code here
 	}
@@ -81,7 +81,8 @@ public class PixelDraw {
 			public void mousePressed(MouseEvent e) {
 				if (e.getButton() == MouseEvent.BUTTON3) {
 					System.out.println("Filling started");
-					autofill(e.getX(), e.getY()-28);
+					int i = (e.getY()-28)/PIXELHEIGHT, j = e.getX()/PIXELWIDTH;
+					autofill(i,j);
 					System.out.println("Filling completed\n");
 					window.getContentPane().repaint();
 				}
